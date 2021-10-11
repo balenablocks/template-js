@@ -20,10 +20,12 @@ version: "2.1"
 services:
   template:
     restart: always
-    image: ghcr.io/balena-io-playground/balenablock-template:master
-    expose:
-      - "1337"
+    image: ghcr.io/balena-io-playground/balenablock-template:latest
+    ports:
+      - "80:3000"
 ```
+
+> If you want to use a webserver exposing a public facing page, you will need to remove the exposed port 80
 
 ## Documentation
 
