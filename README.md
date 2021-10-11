@@ -20,7 +20,7 @@ version: "2.1"
 services:
   template:
     restart: always
-    image: balenablocks/template:latest
+    image: ghcr.io/balena-io-playground/balenablock-template:master
     expose:
       - "1337"
 ```
